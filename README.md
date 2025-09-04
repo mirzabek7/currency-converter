@@ -1,16 +1,37 @@
-# currency_converter
+# 💱 Currency Converter
 
-A new Flutter project.
+A Flutter application for converting currencies with real-time exchange rates.  
+The project is built using **Clean Architecture** and **BLoC** for state management.  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Features
+- 📌 Fetch a list of currencies from API  
+- 🔄 Select "from" and "to" currencies via BottomSheet  
+- 💱 Convert between currencies  
+- 🌀 State management with **BLoC**  
+- 🧩 Dependency injection with **get_it**  
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🛠️ Tech Stack
+- **Flutter**  
+- **Dart**  
+- **BLoC** (`flutter_bloc`)  
+- **get_it** (Dependency Injection)  
+- **Dio** (API requests)  
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🏗️ Architecture
+The project follows **Clean Architecture** principles:
+
+lib/
+│── core/ # Common dependencies, themes, constants
+│── features/
+│ └── converter/
+│ ├── data/ # API handling, DTO models, repositories impl
+│ ├── domain/ # Entities, repositories, use cases
+│ └── presentation/
+│ ├── blocs/ # BLoC state management
+│ └── screens & widgets
