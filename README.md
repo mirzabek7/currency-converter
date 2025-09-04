@@ -28,10 +28,17 @@ The project follows **Clean Architecture** principles:
 
 lib/
 │── core/ # Common dependencies, themes, constants
+
 │── features/
+
 │ └── converter/
+
 │ ├── data/ # API handling, DTO models, repositories impl
+
 │ ├── domain/ # Entities, repositories, use cases
+
 │ └── presentation/
+
 │ ├── blocs/ # BLoC state management
+
 │ └── screens & widgets
