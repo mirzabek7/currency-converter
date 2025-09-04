@@ -19,7 +19,7 @@ class RemoteDataSourceImpl implements RemoteDatasource {
 
   static const String baseUrl = "https://api.freecurrencyapi.com/v1";
   static const String apiKey =
-      "fca_live_1L207foXpAwzZuPWCGvC7lE0dQ4bZLJfv775jdml";
+      "-----------------------------------------";
 
   @override
   Future<List<CurrencyModel>> getCurrencies() async {
